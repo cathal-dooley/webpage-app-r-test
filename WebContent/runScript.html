@@ -1,0 +1,95 @@
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Demo WebApp using DeployR</title>
+   </head>
+   <body>
+      <!DOCTYPE html>
+      <html lang="en">
+         <head>
+            <meta charset="utf-8">
+            <title>Demo WebApp using DeployR</title>
+            <link rel="stylesheet" href="bootstrap-combined.min.css">
+            <link rel="stylesheet" href="main.css">
+            <link rel="stylesheet" href="prettify-min.css">
+            
+         </head>
+         <body>
+            <div class="container">
+               <div class="row-fluid">
+                  <div class="page-header">
+                     <div class="muted pull-right">
+                     </div>
+                     <h1>Demo WebApp for DeployR Examples</h1>
+                  </div>
+               </div>
+               <div id= "doc" class="row-fluid">
+                  <div class="span9">
+                     <div class="revo-content">
+                        <!-- custom styles for this example -->
+                        <style>  
+                           #results-canvas .bd{
+                           height: 300px;      
+                           }
+                           #input-canvas input {
+                           margin-top: -10px;
+                           }
+                        </style>
+                        <div class="well">
+                           <p>
+                              This Demo Webpage contains some example Web Applications which run R Scripts through the DeployR framework.
+                           </p>
+                           <p>
+                              These examples can be selected below.
+                           </p>
+                        </div>
+              
+                        <div class="example">
+                           <div id="example-canvas">
+                              <div id="input-canvas" class="span6">
+                                 <h2>Applications</h2>
+                                 <table class="table table-striped table-bordered example-index">
+                                    <thead>
+                                       <tr>
+                                          <th class="title" colspan="2">
+                                             <h4>Web App Examples</h4>
+                                          </th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td class="barchart"><a target="_blank"  href="http://localhost:8080/barchart-app-r/runScript.html"> Barchart </a></td>
+                                          <td> Creates a histogram of weekly auto sales. </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="data-plots"><a target="_blank"  href="http://localhost:8080/data-plots-app-r/runScript.html"> Data Plots</a></td>
+                                          <td> Creates two simple plots: A Line Graph and a Histogram.  </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="histogram"><a target="_blank" href="http://localhost:8080/histogram-app-r/runScript.html">Histogram</a></td>
+                                          <td class="description">
+                                            Creates histogram with size defined by user input.
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="regression"><a target="_blank" href="http://localhost:8080/regression-app-r/runScript.html">Regression</a></td>
+                                          <td class="description">Creates a second degree polynomial regression curve.</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+								  
+								</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- /row-fluid -->
+               <hr>
+            <!--/.fluid-container-->
+            <script src="prettify-min.js"></script>
+            <script>prettyPrint();</script>
+         </body>
+      </html>
